@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Horoscope aura to lwc communication</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>selected Sign by user</description>
+        <fieldName>selectedSign</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>selected Day by user</description>
+        <fieldName>selectedDay</fieldName>
+    </lightningMessageFields>
+    <masterLabel>Horoscope channel</masterLabel>
+</LightningMessageChannel>

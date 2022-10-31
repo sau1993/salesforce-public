@@ -1,0 +1,25 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <lightning:messageChannel type="HoroscopeMessageChannel__c" aura:id="HoroscopeMessageChannel"/>
+    <aura:attribute name="selectedSign" type="String" default=""/>
+    <aura:attribute name="selectedDay" type="String" default=""/>
+    <aura:attribute 
+    name="sign" 
+    type="String[]" 
+    default="aries,taurus,gemini,cancer,leo,virgo,libra,scorpio,sagittarius,capricorn,aquarius,pisces"/>
+    <aura:attribute 
+    name="day" 
+    type="String[]" 
+    default="today,tomorrow,yesterday"/>
+    <lightning:select aura:id="sign" name="selectSign" label="Sign" required="true" onchange="{!c.getSign}">
+        <option value="">-- None --</option>
+        <aura:iteration items="{!v.sign}" var="sn">
+            <option value="{!sn}" text="{!sn}"></option>
+        </aura:iteration>
+    </lightning:select>
+    <lightning:select aura:id="day" name="selectDay" label="Day" required="true" onchange="{!c.getDay}">
+        <option value="">-- None --</option>
+        <aura:iteration items="{!v.day}" var="dy">
+            <option value="{!dy}" text="{!dy}"></option>
+        </aura:iteration>
+    </lightning:select>
+</aura:component>

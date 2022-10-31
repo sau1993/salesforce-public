@@ -1,0 +1,14 @@
+.font18-bold{
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+.discription-font{
+    color: orange;
+    font-size:medium;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+.line-item{
+    padding: 5px; 
+}

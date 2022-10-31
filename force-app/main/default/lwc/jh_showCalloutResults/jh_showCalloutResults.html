@@ -1,0 +1,11 @@
+<template>
+    <template if:true={callBack}>
+    <p class='font18-bold'>Your horoscope for {myHoroscopeData.current_date}</p>
+    <p class='discription-font'>{myHoroscopeData.description}</p>
+    <p class='line-item'>Your compatible start sign:&nbsp; {myHoroscopeData.compatibility}</p>
+    <p class='line-item'>Your mood:&nbsp; {myHoroscopeData.mood}</p>
+    <p class='line-item'>Your lucky color:&nbsp; {myHoroscopeData.color}</p>
+    <p class='line-item'>Your lucky number:&nbsp; {myHoroscopeData.lucky_number}</p>
+    <p class='line-item'>Your lucky time:&nbsp; {myHoroscopeData.lucky_time}</p>
+    </template>
+</template>
